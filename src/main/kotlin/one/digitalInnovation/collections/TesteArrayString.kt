@@ -25,4 +25,22 @@ fun main() {
     }
 
     println("\nO tamanho da sua lista é ${ordem - 1}")
+
+    val nomes2 = arrayOf("Julio Henrique", "Ana Caroline")
+
+    var ordem2 = 1
+    println("----------------------------------------------")
+    for(list in nomes2){
+        println("$ordem2. $list")
+        ordem2 += 1
+    }
+
+    nomes2.sort()
+    ordem2 = 1
+
+    println("-----------------------------------------------")
+    nomes2.forEach {
+        println("$ordem2. $it")
+        ordem2 += 1
+    }
 }
