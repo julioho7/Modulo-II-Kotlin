@@ -1,0 +1,28 @@
+package one.digitalInnovation.collections
+
+fun main() {
+    val nomes = Array(6){" "}
+
+    nomes[0] = "Julio"
+    nomes[1] = "Ana"
+    nomes[2] = "Isaac"
+    nomes[3] = "Jackson"
+    nomes[4] = "Juliane"
+    nomes[5] = "Jonathan"
+
+    var ordem = 1
+    for (lista in nomes){
+        println("$ordem. $lista")
+        ordem += 1
+    }
+
+    println("-------------------------------------------")
+    ordem = 1
+    nomes.sort() //Aqui ele irá ordenar o Array, agora com String, em ordem alfabética.
+    nomes.forEach{
+        println("$ordem. $it")
+        ordem += 1
+    }
+
+    println("\nO tamanho da sua lista é ${ordem - 1}")
+}
