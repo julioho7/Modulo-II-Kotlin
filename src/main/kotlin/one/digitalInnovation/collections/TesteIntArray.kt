@@ -30,4 +30,11 @@ fun main() {
         //println(index)
         println("O valor de index é: $index e o valor de sua posição é: ${values[index]}")
     }
+
+    println("-----------------------------------------------------------------------------")
+    println("Impressão por valor crescente")
+    values.sort() //O sort ordena, por padrão, do menor para o maior
+    for (valor in values){
+        println(valor)
+    }
 }
