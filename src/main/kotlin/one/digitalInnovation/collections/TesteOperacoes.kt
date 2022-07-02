@@ -29,7 +29,17 @@ fun main() {
     println("--------------------------------------")
     //Filtro dos salários do Array que estão no intervalo estípulado - Método range
     //Contador da quantidade de salários que estão no intervalo estipulado
-    println("O total de salários no intervalo são: ${salarios.count{it in 2000.0..5000.0}}")
+    println("Temos ${salarios.count{it in 2000.0..5000.0}} salários que estão no intervalo, são eles: ")
     val filtroSalariosEntreValores2 = salarios.filter { it in 2000.0..5000.00 }
     filtroSalariosEntreValores2.forEach { println("R$%.2f".format(it)) }
+
+    println("--------------------------------------")
+    println("Encontrar Valor em um DoubleArray: ")
+    println("R$ ${salarios.find { it == 2501.0 }}")
+
+    println("Exemplo de caso negativo: ")
+    println("${salarios.find { it == 501.0 }}")
+
+    println("Exemplo de encontrar qualquer (true/false): ")
+    println("${salarios.any { it == 2501.0 }}")
 }
