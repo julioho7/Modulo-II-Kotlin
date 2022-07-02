@@ -1,4 +1,4 @@
-# Modulo II de Kotlin <img align='right' height='50' width='60' src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg" />
+# Modulo II de Kotlin <img align='center' height='50' width='60' src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg" />
 
 ### Aprendendo a trabalhar com as seguintes funções da linguagem:
 * Arrays
